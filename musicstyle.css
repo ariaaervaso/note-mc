@@ -1,0 +1,323 @@
+/*|| General Page Layout  */
+
+    body {background-color: #f2f2f2;
+         }
+
+    p {
+      font-size: 20px;
+      text-align: left;
+      padding-left: 0;
+      color: black;
+      font-style: normal;
+
+    }
+
+    *{margin:0;
+      padding:0;
+      box-sizing: border-box;
+      outline: none;}
+
+/* ||Home Page Layout*/
+
+    .welcome p {
+      font-size: 50px;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .welcome img {
+      width: 400px;
+      height: 400px;
+      display: block;
+      margin-top: -50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .mission h1 {
+      text-align: center;
+      font-size: 40px;
+      color: black;
+      margin-bottom: -20px;
+    }
+
+    .mission p {
+      text-align: center;
+      padding-top: 40px;
+    }
+
+
+/*|| Horizontal Navigation Bar  */
+
+    ul {
+      list-style-type: none;
+      padding: 15px;
+      overflow: hidden;
+      border-right: 2px #F6D55C;
+      background-color: #173f5f; /* Navy Blue-ish*/
+      position: fixed;
+      width: 100%;}
+
+    li {
+      float: left;
+      border-right: 1px solid #bbb}
+
+    li a {
+      color: white;
+      font-size: 16px ;
+      padding: 20px;
+      text-decoration: none;
+      text-align: center;
+      }
+
+    li a:hover{background-color: #215a88;
+    }
+
+    .active {
+      background-color: #3caea3;} /*tealish maybe*/
+
+/*|| Title for each page */
+
+    .top h1{
+      font-size: 40px;
+      font-style: italic;
+      text-align: center;
+      padding-top: 50px;
+      background-color: #3caea3;
+    }
+
+    .top p {
+      text-align: center;
+    }
+
+
+/*|| Contact Us Form */
+
+
+    .wrapper {
+      /*position: absolute;*/
+      transform: translateY(14%);
+      top: 50%;
+      width: 100%;
+      padding: 20px 20px;
+      display: block;
+    }
+
+    .contact-form {
+      max-width: 550px;
+      margin: 0 auto ;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      border-radius: 10px;
+      display: flex;
+      box-shadow: 0 0 10px rgba(0,0,0,0.13);
+    }
+
+    .input-fields {
+      display: flex;
+      flex-direction: column;
+      margin-right: 10%;
+    }
+
+    .input-fields,.msg,.btn {
+      width: 50%;
+    }
+
+     input,
+    .msg textarea {
+      margin: 10px 0;
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid #173f5f;
+      padding:10px;
+      color: #c5ecfd;
+    }
+
+
+    .msg textarea {
+      height: 155px;
+    }
+
+
+    ::-webkit-input-placeholder{
+      color: #c5ecfd;
+    }
+
+    ::-moz-input-placeholder{
+      color: #c5ecfd;
+    }
+
+    ::-ms-input-placeholder{
+      color: #c5ecfd;
+    }
+
+    .button{
+      background: #173f5f;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+      color: #ffff;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .button:hover{
+      background-color: #172f5f;
+    }
+    @media screen and (max-width: 600px) {
+      .contact-form{
+        flex-direction: column;
+      }
+      .msg textarea{
+      height: 80px}
+
+      .input-fields,
+      .msg{
+        width: 100%;
+      }
+      .wrapper{
+        transform: translateY(0);
+      }
+    }
+
+/*|| Activities and Image Links*/
+
+.instrument{
+  width:250px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: inline-grid;
+  border-radius: 5px;
+  margin: 1.5%;
+
+}
+.container{
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.instrument img {
+  width: 250px;
+  height:200px;}
+
+  .mus_act{
+    max-height: 800px;}
+
+.acti p {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+
+/*||Schedule*/
+#adc {
+   margin-bottom: 155px;
+ }
+
+
+/* || Footer Area */
+.footer{
+position: fixed;
+left: 0;
+width: 100%;
+background-color: #173f50;
+color: white;
+bottom: 0;
+}
+
+#foot{
+  bottom: 0;
+}
+
+.footer img {
+  width: auto;
+  height: 200px;
+  display: block;
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.sm a {
+  margin: -75px 10px -5px;
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 18px;
+  position: relative;
+  border-radius: 50%;
+}
+
+
+ a i::before{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+  background-image: linear-gradient(135deg, #3b5998 30%, #0a3d62 50%);
+  background-size: 100% 100%;
+  background-position: 75% 75%;
+  top:0;
+  left:0;
+  line-height: 50px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/*|| About Us Page*/
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+}
+.rightcolumn img {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.rightcolumn p, .rightcolumn h2, .rightcolumn a {
+  text-align: center;
+  color: black;
+}
+
+.leftcolumn p {
+  text-align: justify;
+}
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+  ;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+iframe{
+  padding-right: 30px;
+}
